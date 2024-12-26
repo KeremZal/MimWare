@@ -8,6 +8,7 @@ body {
     /* background-color: #323539; */
     background-color: #35383c;
     color: white;
+    font-family: 'Sofia Pro', sans-serif;
 }
 
 p {
@@ -34,6 +35,13 @@ img {
     object-fit: cover;
 }
 
+header {
+    background-color: #282b2e;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
 .margin {
     margin: 5rem 0rem;
 }
@@ -43,6 +51,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .logo-div {
@@ -682,20 +691,233 @@ p {
 }
 
 .last-card {
-    border: 1px solid red;
-    justify-content: space-between;
     display: flex;
-    background-color: white;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #282b2e !important;
+    height: 150px;
+    opacity: .8;
+    transition: .2s ease;
 }
 
-.last-card {
-    width: 400px;
-    height: 200px;
+.last-card-image {
+    width: 40%;
 }
 
 .last-card img {
     width: 100%;
     height: 100%;
+}
+
+.lass-card-date-arrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd400;
+    color: #fff;
+    opacity: 0;
+    transition: .2s ease;
+}
+
+.last-card-text h3 {
+    font-size: 1.1rem;
+    overflow: hidden;
+    max-height: 58px;
+    color: black;
+
+}
+
+.last-card-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 2rem;
+}
+
+.last-card-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+
+}
+
+.last-card:hover {
+    opacity: 1;
+    border: 2px solid #DFBB06;
+
+    .lass-card-date-arrow {
+        opacity: 1;
+    }
+}
+
+.manage-system {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    transition: .2s ease;
+}
+
+.manage-system-div {
+    padding: 2rem;
+    border: 1px solid #fff;
+    transition: .2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-top: 2rem;
+    transition: .2s ease;
+}
+
+.manage-system-div:hover {
+
+    border: 1px solid #DFBB06;
+}
+
+.manage-item {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    transition: .2s ease;
+}
+
+.manage-icon i {
+    border: 1px solid white;
+    padding: .6rem;
+    border-radius: 50%;
+    font-size: 23px;
+    transition: .2s ease;
+}
+
+.manage-item:hover {
+    color: #DFBB06;
+
+    .manage-icon i {
+        background-color: #DFBB06;
+        border: 1px solid transparent;
+        color: white;
+    }
+
+
+}
+
+.manage-arrow {
+    font-size: 1rem;
+    position: relative;
+    align-self: center;
+    top: 3rem;
+    transition: .2s ease;
+}
+
+.manage-arrow i {
+    color: #DFBB06;
+    font-size: 25px;
+}
+
+#chevron-icon2 {
+    left: -8px;
+    position: relative;
+    font-size: 27px;
+}
+
+.card-btn {
+    background-color: #DFBB06;
+    color: black;
+    padding: 1rem 2rem;
+    transition: .2s ease;
+}
+
+.cards {
+    display: flex;
+    gap: 120px;
+    padding: 2rem 0;
+}
+
+.card-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.card-1 {
+    background-color: #282B2E;
+    padding: 3rem;
+    transition: .2s ease;
+}
+
+.card-text h2 {
+    transition: .2s ease;
+    color: #DFBB06;
+}
+
+.card-text p {
+    color: #8f8f8f;
+    padding: 1rem 0 2rem 0px;
+    transition: .2s ease;
+}
+
+.card-1:hover {
+    background-color: #DFBB06;
+
+    .card-text h2 {
+        color: black;
+    }
+
+    .card-btn {
+        background-color: black;
+        color: #DFBB06;
+    }
+
+    .card-text p {
+        color: white !important;
+    }
+}
+
+.form-bg {
+    background-image: url(img/unrecognizable-businessmen-sitting-desk-looking-tablet-document-together@2x.png);
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.form-bg-shadow {
+    background-color: rgb(0 0 0 / 43%);
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.shadow-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+}
+
+.form-elements {
+    border: 1px solid white;
+    color: white;
+    padding: 1rem;
+    background-color: transparent;
+    outline: transparent;
+}
+.form-elements::placeholder{
+    color: white;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @media(max-width: 1200px) {
@@ -747,6 +969,94 @@ p {
         flex-direction: column;
         gap: 30px;
     }
+
+    .elips {
+        height: 69rem;
+        border: 1px solid transparent;
+    }
+
+    .elipses-img {
+        display: none;
+    }
+
+    .elipses-elips:nth-child(1) {
+        left: 50%;
+        top: 0;
+        position: absolute;
+    }
+
+    .elipses-elips:nth-child(2) {
+        left: 50%;
+        top: 190px;
+        position: absolute;
+    }
+
+    .elipses-elips:nth-child(3) {
+        left: 50%;
+        top: 380px;
+        position: absolute;
+    }
+
+    .elipses-elips:nth-child(4) {
+        left: 50%;
+        top: 52%;
+        position: absolute;
+    }
+
+    .elipses-elips:nth-child(5) {
+        left: 40%;
+        top: 942px;
+        position: absolute;
+    }
+
+    .elipses-elips:nth-child(6) {
+        left: 50%;
+        top: 69%;
+        position: absolute;
+    }
+
+    .elipses-elips:nth-child(7) {
+        left: 27%;
+        top: 69%;
+        position: absolute;
+    }
+
+    .elipses-elips:nth-child(8) {
+        left: 27%;
+        top: 52%;
+        position: absolute;
+    }
+
+    .elipses-elips:nth-child(9) {
+        left: 27%;
+        top: 380px;
+        position: absolute;
+    }
+
+    .elipses-elips:nth-child(10) {
+
+        position: absolute;
+        left: 28%;
+        top: 190px;
+    }
+
+    .elipses-elips:nth-child(11) {
+        left: 28%;
+        top: 0;
+        position: absolute;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .last-card-div {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+        justify-items: center;
+        align-items: center;
+    }
 }
 
 @media(max-width:768px) {
@@ -770,9 +1080,53 @@ p {
     .indust-bg {
         height: 1150px;
     }
+
+    .manage-item {
+        flex-direction: column;
+    }
+
+    .manage-item {
+        gap: .5rem;
+        flex-direction: row;
+    }
+
+    .manage-system-div {
+        gap: .5rem;
+        justify-content: start;
+        text-align: start;
+        width: 100%;
+    }
+
+    .manage-system {
+        flex-direction: column;
+    }
+
+    .manage-arrow {
+        transform: rotate(90deg);
+        top: 2rem;
+        left: 16px;
+    }
+
+    #chevron-icon2 {
+        left: -30px;
+        position: relative;
+        font-size: 27px;
+        top: 0.35rem;
+    }
+
+    #chevron-icon1 {
+        position: relative;
+        top: .3rem;
+        left: -20px;
+    }
 }
 
+@media (max-width:425px) {
 
+    .last-card-text h3 {
+        margin-top: -15px;
+    }
+}
 
 /* animasyonlar */
 
@@ -798,6 +1152,22 @@ p {
 
 .animation4 {
     animation: fromTopRight 1s forwards;
+}
+
+.sars {
+    animation: bounceIn 1s forwards;
+}
+
+.bot {
+    animation: fromBottom 1s forwards;
+}
+
+.left {
+    animation: fromLeft2 1s forwards;
+}
+
+.right {
+    animation: fromRight 1s forwards;
 }
 
 @keyframes fromTopLeft {
@@ -862,7 +1232,21 @@ p {
     100% {
         transform: translate(20px, 0);
         opacity: 1;
-        background-color: #DFBB06;
+
+    }
+}
+
+@keyframes fromLeft2 {
+    0% {
+        transform: translate(-100%, 0%);
+        visibility: visible;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0px, 0);
+        opacity: 1;
+
     }
 }
 
@@ -872,6 +1256,54 @@ p {
     }
 
     100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+
+        transform: scale3d(.3, .3, .3);
+    }
+
+    20% {
+
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+
+        transform: scale3d(.9, .9, .9);
+    }
+
+    60% {
+        opacity: 1;
+
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    80% {
+
+        transform: scale3d(.97, .97, .97);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform: scaleX(1);
+    }
+}
+
+@keyframes fromBottom {
+    0% {
+        transform: translate(0, 100%);
+        visibility: visible;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(10px, 0px);
         opacity: 1;
     }
 }

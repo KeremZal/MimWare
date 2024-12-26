@@ -127,6 +127,134 @@ window.addEventListener('scroll', function () {
     elipsesanimasyon11.classList.add('opacity-animation');
   }
 
+  const maneganimasyon = document.querySelector('.stun')
+  const manegswindowHeight = window.innerHeight;
+  const manegelementTop = maneganimasyon.getBoundingClientRect().top;
+  if (manegelementTop < manegswindowHeight) {
+    maneganimasyon.classList.add('sars');
+  }
+
+  const maneganimasyon2 = document.querySelector('.stun2')
+  const manegswindowHeight2 = window.innerHeight;
+  const manegelementTop2 = maneganimasyon2.getBoundingClientRect().top;
+  if (manegelementTop2 < manegswindowHeight2) {
+    maneganimasyon2.classList.add('sars');
+  }
+  const maneganimasyon3 = document.querySelector('.stun3')
+  const manegswindowHeight3 = window.innerHeight;
+  const manegelementTop3 = maneganimasyon3.getBoundingClientRect().top;
+  if (manegelementTop3 < manegswindowHeight3) {
+    maneganimasyon3.classList.add('sars');
+  }
+  const maneganimasyon4 = document.querySelector('.stun4')
+  const manegswindowHeight4 = window.innerHeight;
+  const manegelementTop4 = maneganimasyon4.getBoundingClientRect().top;
+  if (manegelementTop4 < manegswindowHeight4) {
+    maneganimasyon4.classList.add('sars');
+  }
+  const maneganimasyon5 = document.querySelector('.stun5')
+  const manegswindowHeight5 = window.innerHeight;
+  const manegelementTop5 = maneganimasyon5.getBoundingClientRect().top;
+  if (manegelementTop5 < manegswindowHeight5) {
+    maneganimasyon5.classList.add('sars');
+  }
+  const maneganimasyon6 = document.querySelector('.stun6')
+  const manegswindowHeight6 = window.innerHeight;
+  const manegelementTop6 = maneganimasyon6.getBoundingClientRect().top;
+  if (manegelementTop6 < manegswindowHeight6) {
+    maneganimasyon6.classList.add('sars');
+  }
+  const maneganimasyon7 = document.querySelector('.stun7')
+  const manegswindowHeight7 = window.innerHeight;
+  const manegelementTop7 = maneganimasyon7.getBoundingClientRect().top;
+  if (manegelementTop7 < manegswindowHeight7) {
+    maneganimasyon7.classList.add('sars');
+  }
+
+
+  const leftmaneganimasyon = document.querySelector('.left-stun')
+  const leftmanegswindowHeight = window.innerHeight;
+  const leftmanegelementTop = leftmaneganimasyon.getBoundingClientRect().top;
+  if (leftmanegelementTop < leftmanegswindowHeight) {
+    leftmaneganimasyon.classList.add('sars');
+  }
+  const leftmaneganimasyon2 = document.querySelector('.left-stun2')
+  const leftmanegswindowHeight2 = window.innerHeight;
+  const leftmanegelementTop2 = leftmaneganimasyon2.getBoundingClientRect().top;
+  if (leftmanegelementTop2 < leftmanegswindowHeight2) {
+    leftmaneganimasyon2.classList.add('sars');
+  }
+  const leftmaneganimasyon3 = document.querySelector('.left-stun3')
+  const leftmanegswindowHeight3 = window.innerHeight;
+  const leftmanegelementTop3 = leftmaneganimasyon3.getBoundingClientRect().top;
+  if (leftmanegelementTop3 < leftmanegswindowHeight3) {
+    leftmaneganimasyon3.classList.add('sars');
+  }
+  const leftmaneganimasyon4 = document.querySelector('.left-stun4')
+  const leftmanegswindowHeight4 = window.innerHeight;
+  const leftmanegelementTop4 = leftmaneganimasyon4.getBoundingClientRect().top;
+  if (leftmanegelementTop4 < leftmanegswindowHeight4) {
+    leftmaneganimasyon4.classList.add('sars');
+  }
+  const leftmaneganimasyon5 = document.querySelector('.left-stun5')
+  const leftmanegswindowHeight5 = window.innerHeight;
+  const leftmanegelementTop5 = leftmaneganimasyon5.getBoundingClientRect().top;
+  if (leftmanegelementTop5 < leftmanegswindowHeight5) {
+    leftmaneganimasyon5.classList.add('sars');
+  }
+  const leftmaneganimasyon6 = document.querySelector('.left-stun6')
+  const leftmanegswindowHeight6 = window.innerHeight;
+  const leftmanegelementTop6 = leftmaneganimasyon6.getBoundingClientRect().top;
+  if (leftmanegelementTop6 < leftmanegswindowHeight6) {
+    leftmaneganimasyon6.classList.add('sars');
+  }
+  const leftmaneganimasyon7 = document.querySelector('.left-stun7')
+  const leftmanegswindowHeight7 = window.innerHeight;
+  const leftmanegelementTop7 = leftmaneganimasyon7.getBoundingClientRect().top;
+  if (leftmanegelementTop7 < leftmanegswindowHeight7) {
+    leftmaneganimasyon7.classList.add('sars');
+  }
+
+  const cardmaneganimasyon = document.querySelector('.card-1')
+  const cardmanegswindowHeight = window.innerHeight;
+  const cardmanegelementTop = cardmaneganimasyon.getBoundingClientRect().top;
+  if (cardmanegelementTop < cardmanegswindowHeight) {
+    cardmaneganimasyon.classList.add('bot');
+  }
+
+  
+  const cardmaneganimasyon2 = document.querySelector('.card2')
+  const cardmanegswindowHeight2 = window.innerHeight;
+  const cardmanegelementTop2 = cardmaneganimasyon2.getBoundingClientRect().top;
+  if (cardmanegelementTop2 < cardmanegswindowHeight2) {
+    cardmaneganimasyon2.classList.add('bot');
+  }
+
+  const lastcard = document.querySelector('.last-card')
+  const lastcardHeight = window.innerHeight;
+  const lastcardgelementTop =  lastcard.getBoundingClientRect().top;
+  if (lastcardgelementTop <  lastcardHeight) {
+    lastcard.classList.add('left');
+  }
+
+  const lastcard2 = document.querySelector('.anima1')
+  const lastcardHeight2 = window.innerHeight;
+  const lastcardgelementTop2 =  lastcard2.getBoundingClientRect().top;
+  if (lastcardgelementTop2 <  lastcardHeight2) {
+    lastcard2.classList.add('right');
+  }
+  const lastcard3 = document.querySelector('.anima2')
+  const lastcardHeight3 = window.innerHeight;
+  const lastcardgelementTop3 =  lastcard3.getBoundingClientRect().top;
+  if (lastcardgelementTop3 <  lastcardHeight3) {
+    lastcard3.classList.add('left');
+  }
+  const lastcard4 = document.querySelector('.anima3')
+  const lastcardHeight4 = window.innerHeight;
+  const lastcardgelementTop4 =  lastcard4.getBoundingClientRect().top;
+  if (lastcardgelementTop4 <  lastcardHeight4) {
+    lastcard4.classList.add('right');
+  }
 });
 
 
