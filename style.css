@@ -399,6 +399,7 @@ header {
     text-align: center;
     position: absolute;
     background-color: #282B2E;
+    transition: .2s ease;
 }
 
 .elipses-icon {
@@ -443,7 +444,7 @@ header {
 }
 
 .elipses-elips:nth-child(4) {
-    left: 91%;
+    left: 90%;
     top: 49%;
     position: absolute;
 }
@@ -896,6 +897,35 @@ p {
     left: 0;
 }
 
+.text-box {
+    width: 100%;
+    height: 90px;
+    padding: 1rem;
+}
+
+.shadow-form2 {
+    padding: 1rem 0rem;
+}
+
+.shadow-btn {
+    background-color: #DFBB06;
+    color: black;
+    padding: .7rem 3rem;
+    transition: .2s ease;
+}
+
+.shadow-btn:hover {
+    background-color: #9d8305;
+    color: white;
+    transition: .2s ease;
+}
+
+.shadow-button {
+    display: flex;
+    justify-content: flex-end;
+    transition: .2s ease;
+}
+
 .shadow-text {
     display: flex;
     flex-direction: column;
@@ -910,7 +940,8 @@ p {
     background-color: transparent;
     outline: transparent;
 }
-.form-elements::placeholder{
+
+.form-elements::placeholder {
     color: white;
 }
 
@@ -918,6 +949,21 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.shadow-text>h2 {
+    width: 290px;
+}
+
+.elipses-elips:hover {
+    background: rgb(220, 216, 216);
+    background: linear-gradient(90deg, rgba(220, 216, 216, 1) 0%, rgba(255, 212, 0, 1) 56%);
+}
+
+@media (max-width: 1250px) {
+    .elips {
+        width: 95%;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -932,10 +978,29 @@ p {
         font-size: 28px;
     }
 
-
 }
 
 @media (max-width:992px) {
+    .shadow-text>h2 {
+        width: 100%;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .form-bg {
+        height: 60vh;
+    }
+
+    .form-bg-shadow {
+        height: 60vh;
+    }
+
+    .shadow-text {
+        height: 20vh;
+    }
+
     .ham-menu {
         display: block;
         top: 0px;
@@ -980,25 +1045,25 @@ p {
     }
 
     .elipses-elips:nth-child(1) {
-        left: 50%;
+        left: 60%;
         top: 0;
         position: absolute;
     }
 
     .elipses-elips:nth-child(2) {
-        left: 50%;
+        left: 60%;
         top: 190px;
         position: absolute;
     }
 
     .elipses-elips:nth-child(3) {
-        left: 50%;
+        left: 60%;
         top: 380px;
         position: absolute;
     }
 
     .elipses-elips:nth-child(4) {
-        left: 50%;
+        left: 60%;
         top: 52%;
         position: absolute;
     }
@@ -1010,25 +1075,25 @@ p {
     }
 
     .elipses-elips:nth-child(6) {
-        left: 50%;
+        left: 60%;
         top: 69%;
         position: absolute;
     }
 
     .elipses-elips:nth-child(7) {
-        left: 27%;
+        left: 20%;
         top: 69%;
         position: absolute;
     }
 
     .elipses-elips:nth-child(8) {
-        left: 27%;
+        left: 20%;
         top: 52%;
         position: absolute;
     }
 
     .elipses-elips:nth-child(9) {
-        left: 27%;
+        left: 20%;
         top: 380px;
         position: absolute;
     }
@@ -1036,12 +1101,12 @@ p {
     .elipses-elips:nth-child(10) {
 
         position: absolute;
-        left: 28%;
+        left: 20%;
         top: 190px;
     }
 
     .elipses-elips:nth-child(11) {
-        left: 28%;
+        left: 20%;
         top: 0;
         position: absolute;
     }
@@ -1056,6 +1121,10 @@ p {
         gap: 1.5rem;
         justify-items: center;
         align-items: center;
+    }
+
+    .shadow-button {
+        justify-content: flex-start;
     }
 }
 
@@ -1118,6 +1187,28 @@ p {
         position: relative;
         top: .3rem;
         left: -20px;
+    }
+
+
+
+}
+
+@media (max-width:491px) {
+    .shadow-form {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+
+    .form-bg {
+        height: 80vh;
+    }
+
+    .form-bg-shadow {
+        height: 80vh;
     }
 }
 
