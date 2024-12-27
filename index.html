@@ -26,7 +26,7 @@
                 </div>
                 <div class="header-links">
                     <ul>
-                        <li><a href="#" title="Ana Sayfa">Ana Sayfa</a></li>
+                        <li><a href="#" title="Ana Sayfa" style="color: #DFBB06;">Ana Sayfa</a></li>
                         <li><a href="#" title="Kurumsal">Kurumsal</a></li>
                         <li><a href="#" title="Ürünlerimiz">Ürünlerimiz</a></li>
                         <li><a href="#" title="Referanslar">Referanslar</a></li>
@@ -45,7 +45,7 @@
                 <div class="off-screen-menu">
                     <div class="off-screen-links">
                         <ul>
-                            <li><a href="#" title="Ana Sayfa">Ana Sayfa</a></li>
+                            <li><a href="#" title="Ana Sayfa" style="color: #DFBB06;">Ana Sayfa</a></li>
                             <li><a href="#" title="Kurumsal">Kurumsal</a></li>
                             <li><a href="#" title="Ürünlerimiz">Ürünlerimiz</a></li>
                             <li><a href="#" title="Referanslar">Referanslar</a></li>
@@ -118,6 +118,9 @@
             </ul>
         </div>
     </section>
+
+
+
     <!-- Animasyon 1 -->
     <section class="margin">
         <div class="title">
@@ -230,7 +233,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
     <!-- Animasyon 3 -->
     <section style="margin: 8rem 0rem;">
         <div class="indust-bg">
@@ -241,14 +244,14 @@
                             <h3 style="font-size: 2.3rem;">Mimware Sektörde</h3>
                         </div>
                         <div class="indust-box">
-                            <div class="indust-boxs">
+                            <div class="indust-boxs" id="indust-box1">
                                 <div class="indust-text-1">
                                     <h2>3.5</h2>
                                     <p>Milyon satırın üzerinde
                                         kod geliştirdi.</p>
                                 </div>
                             </div>
-                            <div class="indust-boxs2">
+                            <div class="indust-boxs2 " id="indust-box2">
                                 <div class="indust-text-1">
                                     <h2>47.500</h2>
                                     <p>Saatin üzerinde
@@ -256,14 +259,14 @@
                                         verdi.</p>
                                 </div>
                             </div>
-                            <div class="indust-boxs3">
+                            <div class="indust-boxs3" id="indust-box3">
                                 <div class="indust-text-1">
                                     <h2>47</h2>
                                     <p>üzerinde firmaya
                                         çözüm olmuştur.</p>
                                 </div>
                             </div>
-                            <div class="indust-boxs4">
+                            <div class="indust-boxs4" id="indust-box4">
                                 <div class="indust-text-1">
                                     <h2>33</h2>
                                     <p>Milyon satırın üzerinde
@@ -285,30 +288,47 @@
             <div class="mimware-video">
                 <div class="swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="gap: 20px;">
-                            <video src="video/video1.mp4" width="70%" controls></video>
-                            <img src="img/sarı-kula.png" alt="s" style="width: 30%; height: 100%;">
+                        <div class="swiper-slide">
+                            <video src="video/video2.mp4" controls></video>
                         </div>
-                        <div class="swiper-slide" style="gap: 20px;">
-                            <video src="video/video2.mp4" width="70%" controls></video>
-                            <img src="img/sarı-kula.png" alt="s" style="width: 30%; height: 427px;">
+                        <div class="swiper-slide">
+                            <div class="slider-foto"><img src="img/last-image.png" alt="s"></div>
                         </div>
-                        <div class="swiper-slide" style="gap: 20px;">
-                            <video src="video/video3.mp4" width="70%" controls></video>
-                            <img src="img/sarı-kula.png" alt="s" style="width: 30%; height: 427px;">
+                        <div class="swiper-slide">
+                            <video src="video/video2.mp4" controls></video>
                         </div>
-                    </div>
-                    <div class="mimware-vide-text">
-                        <div class="mim-text">
-                            <h2 style="padding: 1rem 0;">Akıllı Bakım Yönetim Sistemi</h2>
-                            <p>Makinaların, zorlu koşullarda çalışır halde olması ve maliyetlerin <br>
-                                izlenmesi firmalar için hayati önem arz etmektedir.</p>
-                            <div>
+                        <div class="swiper-slide">
+                            <div class="slider-foto"><img src="img/last-image.png" alt="s"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="video/video2.mp4" controls></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-foto"><img src="img/last-image.png" alt="s"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="video/video2.mp4" controls></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider-foto"><img src="img/last-image.png" alt="s"></div>
+                        </div>
 
-                              
-                            </div>
+
+                    </div>
+                </div>
+
+                <div class="mimware-vide-text">
+                    <div class="mim-text">
+                        <h2 style="padding: 1rem 0;">Akıllı Bakım Yönetim Sistemi</h2>
+                        <p>Makinaların, zorlu koşullarda çalışır halde olması ve maliyetlerin <br>
+                            izlenmesi firmalar için hayati önem arz etmektedir.</p>
+                        <div>
+
+
                         </div>
                     </div>
+                </div>
+                <div class="swiper-pagination">
                     <div class="swiper-button-next">
                         <i class="fa-solid fa-arrow-right"></i>
                     </div>
@@ -317,10 +337,12 @@
                     </div>
                 </div>
 
-
             </div>
+
+
         </div>
-    </section> 
+        </div>
+    </section>
 
     <section class="margin">
         <div class="container">
@@ -360,8 +382,8 @@
                     <i class="fa-solid fa-chevron-right" id="chevron-icon1"></i>
                     <i class="fa-solid fa-chevron-right" id="chevron-icon2"></i>
                 </div>
-                <div class="manage-system-div left-stun">
-                    <div class="manage-item">
+                <div class="manage-system-div">
+                    <div class="manage-item left-stun">
                         <div class="manage-icon"><i class="fa-solid fa-gear"></i></div>
                         <div class="manage-text">Lorem Ipsum</div>
                     </div>
@@ -506,7 +528,7 @@
                     <div class="form">
                         <div class="shadow-text">
                             <span style="color: #DFBB06;font-size: 2rem;">Yeni Ürünlerimizden</span>
-                            <h2 > Haberdar olmak 
+                            <h2> Haberdar olmak
                                 istermisiniz? </h2>
                         </div>
                         <div class="shadow-form">
@@ -587,9 +609,17 @@
 
             </div>
         </div>
+        
+        <div class="mimware-footer-bot">
+            <div class="bot-footer">
+                <div class="container">
+                    <div class="footer-bot-text">
+                        <p>© Copyright 2022 - Mimware Yazılım Danışmanlık</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-
-    <br><br><br><br><br>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

@@ -222,7 +222,7 @@ window.addEventListener('scroll', function () {
     cardmaneganimasyon.classList.add('bot');
   }
 
-  
+
   const cardmaneganimasyon2 = document.querySelector('.card2')
   const cardmanegswindowHeight2 = window.innerHeight;
   const cardmanegelementTop2 = cardmaneganimasyon2.getBoundingClientRect().top;
@@ -232,41 +232,67 @@ window.addEventListener('scroll', function () {
 
   const lastcard = document.querySelector('.last-card')
   const lastcardHeight = window.innerHeight;
-  const lastcardgelementTop =  lastcard.getBoundingClientRect().top;
-  if (lastcardgelementTop <  lastcardHeight) {
+  const lastcardgelementTop = lastcard.getBoundingClientRect().top;
+  if (lastcardgelementTop < lastcardHeight) {
     lastcard.classList.add('left');
   }
 
   const lastcard2 = document.querySelector('.anima1')
   const lastcardHeight2 = window.innerHeight;
-  const lastcardgelementTop2 =  lastcard2.getBoundingClientRect().top;
-  if (lastcardgelementTop2 <  lastcardHeight2) {
+  const lastcardgelementTop2 = lastcard2.getBoundingClientRect().top;
+  if (lastcardgelementTop2 < lastcardHeight2) {
     lastcard2.classList.add('right');
   }
   const lastcard3 = document.querySelector('.anima2')
   const lastcardHeight3 = window.innerHeight;
-  const lastcardgelementTop3 =  lastcard3.getBoundingClientRect().top;
-  if (lastcardgelementTop3 <  lastcardHeight3) {
+  const lastcardgelementTop3 = lastcard3.getBoundingClientRect().top;
+  if (lastcardgelementTop3 < lastcardHeight3) {
     lastcard3.classList.add('left');
   }
   const lastcard4 = document.querySelector('.anima3')
   const lastcardHeight4 = window.innerHeight;
-  const lastcardgelementTop4 =  lastcard4.getBoundingClientRect().top;
-  if (lastcardgelementTop4 <  lastcardHeight4) {
+  const lastcardgelementTop4 = lastcard4.getBoundingClientRect().top;
+  if (lastcardgelementTop4 < lastcardHeight4) {
     lastcard4.classList.add('right');
   }
 });
 
 
-
-
-
-
+// var swiper = new Swiper(".mimware-video .swiper", {
+//   slidesPerView: "auto",
+//   spaceBetween: 30,
+//   clickable: true,
+//   navigation: { // Doğru yapılandırma
+//     nextEl: '.swiper-pagination .swiper-button-next', // Doğru seçici
+//     prevEl: '.swiper-pagination .swiper-button-prev', // Doğru seçici
+//   },
+//   breakpoints: {
+//     768: {
+//       slidesPerView: 1.5,
+//       slidesPerGroup: 1.5,
+//     },
+//     loop:true,
+//   },
+// });
 
 var swiper = new Swiper(".mimware-video .swiper", {
+  spaceBetween: 30,
+
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
-  allowTouchMove: false,
+ 
+  allowTouchMove: true,
+  
+  breakpoints: {
+    768: {
+      slidesPerView: 1.5,
+      clickable: true,
+      allowTouchMove: false,
+     
+      
+    },
+  },
+
 });

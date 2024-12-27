@@ -9,6 +9,7 @@ body {
     background-color: #35383c;
     color: white;
     font-family: 'Sofia Pro', sans-serif;
+    overflow-x: hidden;
 }
 
 p {
@@ -39,7 +40,7 @@ header {
     background-color: #282b2e;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 11;
 }
 
 .margin {
@@ -94,23 +95,27 @@ header {
 }
 
 .header-links a:hover {
+    transition: 0.3s;
     color: #DFBB06;
-    transition: .3s ease;
-
 }
 
-/* .header-links>ul>li>a::after{
+.header-links a::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -36px;
     left: 0;
-    width: 100%;
+    right: 0;
+    margin: auto;
+    width: 0;
     height: 3px;
     background-color: #DFBB06;
-    opacity: 1;
-    visibility: visible;
+    transition: 0.3s;
+}
 
-} */
+.header-links a:hover:after {
+    width: 100%;
+    transition: 0.3s;
+}
 
 /* Ham-Menu */
 
@@ -585,6 +590,20 @@ p {
     color: white;
 }
 
+
+
+.swiper-slide {
+    width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+    width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+    width: 40%;
+}
+
 .mimware-video .swiper {
     width: 100%;
     height: 100%;
@@ -605,6 +624,30 @@ p {
     object-fit: cover;
 }
 
+
+
+.mimware-video .swiper {
+    height: 450px;
+}
+
+.mimware-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mimware-video .swiper-slide {
+    width: 80%;
+}
+
+.mimware-video .swiper-slide:nth-child(2n) {
+    width: 60%;
+}
+
+.mimware-video .swiper-slide:nth-child(3n) {
+    width: 40%;
+}
+
 .mimware-video .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
     content: 'next';
@@ -622,7 +665,7 @@ p {
     display: none;
 }
 
-.mimware-vide .swiper-button-next i {
+.mimware-video .swiper-button-next i {
     bottom: 0px;
     position: relative;
 }
@@ -650,6 +693,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .mimware-video .swiper-button-prev i {
@@ -678,6 +722,11 @@ p {
     padding: 1rem 0;
 }
 
+.slider-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .mimware-footer>ul>li>a {
     transition: .2s ease;
@@ -960,6 +1009,21 @@ p {
     background: linear-gradient(90deg, rgba(220, 216, 216, 1) 0%, rgba(255, 212, 0, 1) 56%);
 }
 
+.bot-footer {
+    width: 100%;
+    height: 50px;
+    background-color: #282B2E;
+    color: white;
+}
+
+.footer-bot-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 50px;
+}
+
 @media (max-width: 1250px) {
     .elips {
         width: 95%;
@@ -968,12 +1032,13 @@ p {
 
 @media(max-width: 1200px) {
     .mimware-video .swiper-button-next {
-        right: -813px;
+        right: -863px;
+        top: -100px;
     }
 
+
     .mimware-video .swiper-button-prev {
-        bottom: 109px;
-        position: relative;
+        top: -120px;
         left: 778px;
         font-size: 28px;
     }
@@ -1044,7 +1109,7 @@ p {
         display: none;
     }
 
-    .elipses-elips:nth-child(1) {
+     .elipses-elips:nth-child(1) {
         left: 60%;
         top: 0;
         position: absolute;
@@ -1109,7 +1174,7 @@ p {
         left: 20%;
         top: 0;
         position: absolute;
-    }
+    } */
 
     .cards {
         flex-direction: column;
@@ -1125,6 +1190,21 @@ p {
 
     .shadow-button {
         justify-content: flex-start;
+    }
+
+    .mimware-video .swiper-button-prev {
+        left: 602px;
+        top: -109px;
+    }
+
+    .mimware-video .swiper-button-next {
+        left: 658px;
+        top: -88px;
+    }
+
+    #indust-box1 {
+        margin-left: -18px;
+
     }
 }
 
@@ -1189,8 +1269,104 @@ p {
         left: -20px;
     }
 
+    .mimware-video .swiper-button-prev {
+        left: -13px;
+        top: -393px;
+    }
+
+    .mimware-video .swiper-button-next {
+        left: 494px;
+        top: -376px;
+    }
+
+    #indust-box1 {
+        margin-right: 35px;
+
+    }
+
+    #indust-box2 {
+        margin-right: 36px;
+
+    }
+
+    #indust-box3 {
+        margin-right: 37px;
+
+    }
+
+    #indust-box4 {
+        margin-right: 20px;
+
+    }
+
+    .mimware-video .swiper-button-next i {
+        background-color: #DFBB06;
+    }
+
+    .mimware-video .swiper-button-prev i {
+        background-color: #DFBB06;
+    }
+
+    .mimware-video .swiper-button-prev i:hover,
+    .mimware-video .swiper-button-next i:hover {
+        background-color: #af981f;
+        color: white;
+        border: 1px solid #af981f;
+    }
 
 
+}
+
+@media(max-width:575px) {
+
+    .mimware-video .swiper-button-prev,
+    .mimware-video .swiper-button-next {
+        display: none;
+    }
+
+    #indust-box1 {
+        margin-right: 35px;
+
+    }
+
+    #indust-box2 {
+        margin-right: 36px;
+
+    }
+
+    #indust-box3 {
+        margin-right: 37px;
+
+    }
+
+    #indust-box4 {
+        margin-right: 20px;
+
+    }
+
+    .elipses-elips:nth-child(7) {
+        left: 1px;
+
+    }
+
+    .elipses-elips:nth-child(8) {
+        left: 1px;
+
+    }
+
+    .elipses-elips:nth-child(9) {
+        left: 1px;
+
+    }
+
+    .elipses-elips:nth-child(10) {
+
+        left: 1px;
+    }
+
+    .elipses-elips:nth-child(11) {
+        left: 1px;
+    }
 }
 
 @media (max-width:491px) {
@@ -1210,12 +1386,69 @@ p {
     .form-bg-shadow {
         height: 80vh;
     }
+
+
 }
 
 @media (max-width:425px) {
 
     .last-card-text h3 {
         margin-top: -15px;
+    }
+     .elipses-elips:nth-child(1) {
+        left: 60%;
+        top: 0;
+        position: absolute;
+    }
+
+    .elipses-elips:nth-child(2) {
+        left: 60%;
+        top: 190px;
+        position: absolute;
+    }
+
+    .elipses-elips:nth-child(3) {
+        left: 60%;
+        top: 380px;
+        position: absolute;
+    }
+
+    .elipses-elips:nth-child(4) {
+        left: 60%;
+        top: 52%;
+        position: absolute;
+    }
+
+    .elipses-elips:nth-child(5) {
+        left: 40%;
+        top: 942px;
+        position: absolute;
+    }
+
+    .elipses-elips:nth-child(6) {
+        left: 60%;
+        top: 69%;
+        position: absolute;
+    }
+
+    .elipses-elips:nth-child(7) {
+        left: 0;
+    }
+
+    .elipses-elips:nth-child(8) {
+        left: 0;
+    }
+
+    .elipses-elips:nth-child(9) {
+        left: 0;
+    }
+
+    .elipses-elips:nth-child(10) {
+        left: 0;
+    }
+
+    .elipses-elips:nth-child(11) {
+        left: 0;
     }
 }
 
